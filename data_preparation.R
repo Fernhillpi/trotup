@@ -3,53 +3,53 @@ library(tidyverse)
 #Load CSVs 
 
 
-HQH <-read_csv("Documents/trotup code and resources/PH SCRAPES/hqhorsesjulyparsehub.csv", col_types = cols(advert_price = col_number()))
+HQH <-read_csv("Documents/trotup code and resources/PH SCRAPES/hqhorsesaugparsehub.csv", col_types = cols(advert_price = col_number()))
 
 
-HQP <-read_csv("Documents/trotup code and resources/PH SCRAPES/hqponiesjulyparsehub.csv", col_types = cols(advert_price = col_number()))
+HQP <-read_csv("Documents/trotup code and resources/PH SCRAPES/hqponiesaugparsehub.csv", col_types = cols(advert_price = col_number()))
 
-HandH <- read_csv("Documents/trotup code and resources/PH SCRAPES/handhjulyparsehub.csv", 
+HandH <- read_csv("Documents/trotup code and resources/PH SCRAPES/handhaugparsehub.csv", 
                    col_types = cols(advert_age = col_number(), 
                                     advert_height = col_number(), advert_price = col_number()))
 
-PCUK <- read_csv("Documents/trotup code and resources/PH SCRAPES/pcukjulyparsehub.csv", 
+PCUK <- read_csv("Documents/trotup code and resources/PH SCRAPES/pcukaugparsehub.csv", 
             col_types = cols(advert_age = col_number(), 
                              advert_height = col_number(), advert_price = col_number()))
 
-horsemart0_2 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm0-2julyparsehub.csv", 
+horsemart0_2 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm0-2augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
-horsemart2_3 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm2-3julyparsehub.csv", 
+horsemart2_3 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm2-3augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
-horsemart3_5 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm3-5julyparsehub.csv", 
+horsemart3_5 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm3-5augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
-horsemart5_7 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm5-7julyparsehub.csv", 
+horsemart5_7 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm5-7augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
-horsemart7_10 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm7-10julyparsehub.csv", 
+horsemart7_10 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm7-10augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
 
-horsemart10_12 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm10-12julyparsehub.csv", 
+horsemart10_12 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm10-12augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
-horsemart12_14 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm12-14julyparsehub.csv", 
+horsemart12_14 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm12-14augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
-horsemart14_16 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm14-16julyparsehub.csv", 
+horsemart14_16 <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm14-16augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
-horsemart16plus <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm16julyparsehub.csv", 
+horsemart16plus <- read_csv("Documents/trotup code and resources/PH SCRAPES/hm16augparsehub.csv", 
                          col_types = cols(advert_height = col_number(), 
                                           advert_price = col_number()))
 
@@ -311,6 +311,6 @@ options(scipen = 999)
 
 #EXPORT YOUR CLEAN DF TO CSV
 
-write.csv(FINALDATABASE, "julydata.csv")
+write.csv(FINALDATABASE, "augdata.csv")
 
 
